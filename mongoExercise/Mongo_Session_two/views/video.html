@@ -1,0 +1,10 @@
+
+<ul>
+{% for video in video %}
+    <li><a href="http://imdb.com/title/{{video.imdb}}">{{video.title}},{{video.year}}</li>
+</a>
+
+
+{% endfor %}
+<li>No movie found</li>
+</ul>

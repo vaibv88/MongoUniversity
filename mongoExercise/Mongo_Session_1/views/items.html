@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+    {% for items in inventory %}
+    <ul>
+    <li>{{inventory.items}}</li>
+  </ul>
+  {% endfor %}
+
+  </div>
+
+{% endblock %}
